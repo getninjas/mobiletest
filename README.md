@@ -2,11 +2,11 @@
 
 ## The problem
 
-Here at GetNinjas, we have a list of job `offers`, which a pro can accept or
+Here at GetNinjas we have a list of job `offers`, which a pro can accept or
 reject.
 
 When an `offer` is accepted, it becomes a `lead`. The main difference between a
-`lead`, and an `offer`, is that a `lead` has customer contacts, and `offer` does
+`lead` and an `offer` is that a `lead` has customer contacts, and `offer` does
 not.
 
 You'll design both the `leads` and `offers` list and details screen.
@@ -32,10 +32,10 @@ It has a `_links` entry, pointing to the `offers` and `leads` list.
 
 It lists every available `offer`. They have two statuses: `read` and `unread`.
 
-You'll need to diferentiate each status, using blue circle to an `unread` offer,
+You'll need to differentiate each status, using blue circle to an `unread` offer,
 and `gray` to a `read` offer. You don't need to use the icons, a circle is OK.
 
-Every `offer` has a link to the `offer` details info.
+Every `offer` has a link to the `offer` details.
 
 You'll use the `self` link to implement "pull to refresh".
 
@@ -45,7 +45,7 @@ You'll use the `self` link to implement "pull to refresh".
 
 It lists every available `lead`.
 
-Every `lead` has a link to the `lead` details info.
+Every `lead` has a link to the `lead` details.
 
 You'll use the `self` link to implement "pull to refresh".
 
@@ -53,7 +53,7 @@ You'll use the `self` link to implement "pull to refresh".
 
 ### Offer details
 
-Shows the detail information for an offer.
+Shows the details for an offer.
 
 Every `offer` has two links: one for the `accept` button, another to the
 `reject` one.
@@ -62,10 +62,10 @@ Every `offer` has two links: one for the `accept` button, another to the
 
 ### Lead details
 
-Shows the detail information for a lead.
+Shows the detail for a lead.
 
-In the screen, there's two buttons: one for "call" and another for "whatsapp",
-please, implement each of them, leading the user to the phone and whatsapp app
+In the screen, there's two buttons: one for "call" and another for "whatsapp".
+You must implement both, leading the user to the phone and the whatsapp app
 respectively.
 
 [JSON example](json/lead-1)
