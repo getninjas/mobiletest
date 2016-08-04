@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.getninjastest.activity.DetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/screenBackground"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_bg"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Large Text"
+                android:gravity="clip_vertical"
+                android:id="@+id/tvTitle"
+                />
+            <!-- dash line -->
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/dotted"
+            android:layerType="software"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="New Text"
+                android:id="@+id/tvAddress"
+                android:layout_marginLeft="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/llClientContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4ec6fe"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client's Contact"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvClientPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                    tools:text="0191-****"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="4dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvClientEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:drawableLeft="@android:drawable/sym_action_email"
+                    tools:text="0191-****"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="4dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llOfferButtons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refuse"
+            android:background="@android:color/background_light"
+            android:id="@+id/btnRefuse"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:onClick="offerReject"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textStyle="bold"
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/btnAccept"
+            android:layout_weight="1"
+            android:onClick="offerAccept"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLeadButtons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textColor="@color/screenBackground"
+            android:background="@android:color/white"
+            android:id="@+id/btnPhoneCall"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:onClick="phoneCall"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp"
+            android:textColor="@color/screenBackground"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:id="@+id/btnWatsApp"
+            android:layout_weight="1"
+            android:onClick="whatsAppCall"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+</RelativeLayout>
