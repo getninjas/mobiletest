@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp"
+    android:id="@+id/dataCard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <View
+            android:id="@+id/viewStatusRead"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/presence_invisible"
+            android:backgroundTint="@android:color/darker_gray"
+            android:visibility="gone"
+            />
+        <View
+            android:id="@+id/viewStatusUnRead"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/presence_online"
+            android:backgroundTint="@color/screenBackground"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            tools:text="Title" />
+
+        <View
+            android:id="@+id/dottedLine"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/dotted"
+            android:layerType="software"/>
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dottedLine"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text=""
+            tools:text="User" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dottedLine"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text=""
+            tools:text="1 Aug 2016" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUser"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text=""
+            tools:text="Address" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
