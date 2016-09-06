@@ -1,0 +1,64 @@
+{
+  "distance":9010,
+  "lead_price":5,
+  "title":"Celular",
+  "_embedded":{
+    "info":[
+      {
+        "label":"Qual é a marca do celular?",
+        "value":"Motorola"
+      },
+      {
+        "label":"O celular está na garantia?",
+        "value":"Dentro da Garantia"
+      },
+      {
+        "label":"Qual é o problema encontrado?",
+        "value":"Aparelho não liga"
+      },
+      {
+        "label":"Para quando você precisa deste serviço?",
+        "value":"Ainda não tenho previsão"
+      },
+      {
+        "label":"Como você quer ser contactado?",
+        "value":[
+          "Email",
+          "WhatsApp"
+        ]
+      },
+      {
+        "label":"Informações Adicionais",
+        "value":"N/A"
+      }
+    ],
+    "user":{
+      "name":"Rafael",
+      "email":"r*****@gmail.com",
+      "_embedded":{
+        "phones":[
+          {
+            "number":"(11) 9****-****"
+          }
+        ]
+      }
+    },
+    "address":{
+      "city":"São Paulo",
+      "neighborhood":"Santana",
+      "uf":"SP",
+      "geolocation":{
+        "latitude":-23.487831,
+        "longitude":-46.627793
+      }
+    }
+  },
+  "_links":{
+    "accept":{
+      "href":"https://testemobile.getninjas.com.br/lead-3"
+    },
+    "reject":{
+      "href":"https://testemobile.getninjas.com.br/offers"
+    }
+  }
+}

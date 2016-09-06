@@ -1,0 +1,81 @@
+{
+  "offers":[
+    {
+      "state":"read",
+      "_embedded":{
+        "request":{
+          "created_at":"2016-03-04T14:47:05.000+00:00",
+          "title":"Buffet Completo",
+          "_embedded":{
+            "user":{
+              "name":"Eduardo L'Hotellier"
+            },
+            "address":{
+              "city":"São Paulo",
+              "neighborhood":"Vila Leopoldina",
+              "uf":"SP"
+            }
+          }
+        }
+      },
+      "_links":{
+        "self":{
+          "href":"https://testemobile.getninjas.com.br/offer-1"
+        }
+      }
+    },
+    {
+      "state":"unread",
+      "_embedded":{
+        "request":{
+          "created_at":"2016-02-04T14:43:06.000+00:00",
+          "title":"Pedreiro",
+          "_embedded":{
+            "user":{
+              "name":"Felix"
+            },
+            "address":{
+              "city":"São Paulo",
+              "neighborhood":"Butantã",
+              "uf":"SP"
+            }
+          }
+        }
+      },
+      "_links":{
+        "self":{
+          "href":"https://testemobile.getninjas.com.br/offer-2"
+        }
+      }
+    },
+    {
+      "state":"read",
+      "_embedded":{
+        "request":{
+          "created_at":"2016-01-29T13:00:53.000+00:00",
+          "title":"Celular",
+          "_embedded":{
+            "user":{
+              "name":"Rafael"
+            },
+            "address":{
+              "city":"São Paulo",
+              "neighborhood":"Santana",
+              "uf":"SP"
+            }
+          }
+        }
+      },
+      "_links":{
+        "self":{
+          "href":"https://testemobile.getninjas.com.br/offer-3"
+        }
+      }
+    }
+  ],
+  "_links":{
+    "self":{
+      "href":"https://testemobile.getninjas.com.br/offers"
+    }
+  }
+}
