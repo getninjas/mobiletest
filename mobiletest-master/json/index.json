@@ -1,0 +1,10 @@
+{
+   "_links" : {
+      "leads" : {
+         "href" : "http://testemobile.getninjas.com.br/leads"
+      },
+      "offers" : {
+         "href" : "http://testemobile.getninjas.com.br/offers"
+      }
+   }
+}
