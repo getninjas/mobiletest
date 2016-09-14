@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:weightSum="1"
+    android:background="#DADADA">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#DADADA"
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:scaleType="fitStart"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="24dp"
+            android:id="@+id/btnPhone"
+            android:background="#DADADA"
+            android:layout_gravity="center_vertical"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="LIGAR"
+            android:textColor="#4A4A4A"
+            android:textSize="21sp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#DADADA"
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_whatsapp"
+            android:scaleType="fitStart"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:id="@+id/btnWhatsapp"
+            android:background="#DADADA"
+            android:layout_gravity="center_vertical"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="WHATSAPP"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp"/>
+    </FrameLayout>
+
+</LinearLayout>

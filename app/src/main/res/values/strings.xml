@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Jobs</string>
+    <string name="error">Erro recebido: %s</string>
+    <string name="loading">Carregando</string>
+
+    <string name="tab_offers_title">Disponíveis</string>
+    <string name="tab_leads_title">Aceitos</string>
+    <string name="user_distance_label_preposition">a</string>
+    <string name="user_distance_label_distance">Km de você</string>
+    <string name="contact_list_item_title">Contato do Cliente</string>
+
+    <string name="intent_title_share_with">Compartilhar com</string>
+    <string name="intent_error_whatsapp_not_installed">Whatsapp não instalado!</string>
+
+</resources>

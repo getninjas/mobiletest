@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgInfoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info"
+        android:layout_centerVertical="true"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtInfoTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imgInfoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        android:text="sauihasoisja;sa"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtInfoValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#9B9B9B"
+        android:text="jasoiasjoiasas"
+        android:layout_toRightOf="@+id/imgInfoIcon"
+        android:layout_below="@+id/txtInfoTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"/>
+</RelativeLayout>
